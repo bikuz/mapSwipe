@@ -1,0 +1,44 @@
+/*!
+*** AUTHOR
+    Bikram Shakya
+
+*** BUILD DATE
+    May 6, 2020
+
+*** REFERENCE SITE
+    https://gist.github.com/PiotrKrosniak/8731842
+    https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-compare/   
+*/
+
+.mapSwipe-bar{
+    background-color: #ccc;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    z-index: 1;
+    left:50%;
+}
+
+.mapSwipe-handle{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #bbbebf;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    width: 18px;
+    height: 50px;
+    top: 50%;
+    left: -10px;
+    margin: -30px 1px 0;
+    color: #fff;
+    cursor: ew-resize;
+}
+
+.mapSwipe-handle:before{
+    content: '◀▶';
+    color: #333;
+    font-size: 9px;
+    top: 50%;
+    position: absolute;
+    margin: -4px 2px;
+}
